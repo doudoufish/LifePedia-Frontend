@@ -1,0 +1,11 @@
+version: '3'
+services:
+  lifepedia-fe:
+    container_name: lifepedia-fe
+    image: lifepedia-fe
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 4147:4147
